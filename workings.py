@@ -19,7 +19,7 @@ def parse(htmlcode):
 
     
 def get_card(name):
-    url = f"https://uniteapi.dev/{name}"
+    url = f"https://uniteapi.dev/p/{name}"
     resp = requests.get(url)
 
     s = BeautifulSoup( resp.content , 'html.parser')
